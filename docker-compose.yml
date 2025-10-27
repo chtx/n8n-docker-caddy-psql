@@ -34,7 +34,7 @@ services:
     depends_on:
       postgres:
         condition: service_healthy
-  
+
   postgres:
     image: pgvector/pgvector:pg16
     restart: unless-stopped
